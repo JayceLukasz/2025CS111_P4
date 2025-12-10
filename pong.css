@@ -1,0 +1,136 @@
+/*Body Styles*/
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/*Main Container Styles*/
+#container {
+    width: 800px;
+    height: 500px;
+    border: 2px solid black;
+    position: relative;
+    margin: 25px auto;
+    overflow: hidden;
+    background-color: #3a3a3a;
+}
+
+/*Background Container Styles*/
+#blueL {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 300px;
+    height: 480px;
+    background-color: rgb(112, 211, 244);
+    border-radius: 20px;
+}
+
+#greyM {
+    position: absolute;
+    top: 10px;
+    left: 320px;
+    width: 160px;
+    height: 480px;
+    background-color: grey;
+    border-radius: 20px;
+}
+
+#redR {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 300px;
+    height: 480px;
+    background-color: rgb(255, 71, 71);
+    border-radius: 20px;
+}
+
+/*Score Styles*/
+#score {
+    padding: 10px;
+    background-color: rgb(215, 215, 215);
+    border-radius: 10px;
+}
+
+/*Ball Styles*/
+#ball {
+    background-color: yellow;
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    position: absolute;
+    top: 240px;
+    left: 390px;
+    transition: top 0.1s, left 0.1s;
+}
+
+
+/*Goalie Styles*/
+.goalie {
+    width: 25px;
+    height: 100px;
+    position: absolute;
+    transition: top 0.1s, left 0.1s;
+}
+
+#left {
+    background-color: rgb(255, 71, 71);
+    top: 205px;
+    left: 25px;
+}
+
+#right {
+    background-color: rgb(112, 211, 244);
+    top: 205px;
+    left: 750px;
+}
+
+/*Button Styles*/
+.buttons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+#start {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#reset {
+    background-color: #d952b1;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#clear {
+    background-color: #dc7f32;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
